@@ -2,46 +2,6 @@ import { useEffect, useState } from 'react';
 import { isObject } from 'lodash';
 import { useValidators } from './validators';
 
-
-/*
-const {fields, form} = useForm({
-    email: {
-        required: {
-            criteria: true // should be default true
-            message: '' // if not provided use the default required message
-        }
-        minLength: 3
-    },
-    password: {
-        required: {
-            criteria: true // should be default true
-            message: '' // if not provided use the default required message
-        }
-        minLength: {
-            criteria: 3
-            message:  // if not provided use the default  message
-        },
-        maxLength: {
-            criteria: 14
-            message:  // if not provided use the default  message
-        }
-    }
-});
-
-
-form.value  // {email, password}
-form.showError() // invoke the error message displayed on components
-form.isValid // boolean
-
-fields.email //
-
-<InputComponent name="lero lero eh Mato!!!" {...fields.email} />
-
-*/
-
-
-
-
 const standardizeValidation = (validation) => {
     if (isObject(validation)) return validation;
     return {
